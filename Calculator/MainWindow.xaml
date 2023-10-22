@@ -1,0 +1,50 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="350" Width="500">
+    <Grid x:Name="MainRoot" Opacity="0.995">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="textLabel" FontStyle="Normal" FontSize="30" Foreground="White"/>
+        <Button Grid.Column="0" Grid.Row="1" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">7</Button>
+        <Button Grid.Column="1" Grid.Row="1" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">8</Button>
+        <Button Grid.Column="2" Grid.Row="1" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">9</Button>
+        <Button Grid.Column="0" Grid.Row="2" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">4</Button>
+        <Button Grid.Column="1" Grid.Row="2" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">5</Button>
+        <Button Grid.Column="2" Grid.Row="2" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">6</Button>
+        <Button Grid.Column="0" Grid.Row="3" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">1</Button>
+        <Button Grid.Column="1" Grid.Row="3" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">2</Button>
+        <Button Grid.Column="2" Grid.Row="3" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">3</Button>
+        <Button Grid.Column="0" Grid.Row="4" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">0</Button>
+        <Button Grid.Column="4" Grid.Row="1" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">+</Button>
+        <Button Grid.Column="4" Grid.Row="2" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">-</Button>
+        <Button Grid.Column="4" Grid.Row="3" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">*</Button>
+        <Button Grid.Column="4" Grid.Row="4" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">/</Button>
+        <Button Grid.Column="1" Grid.Row="4" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">.</Button>
+        <Button Grid.Column="2" Grid.Row="4" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">=</Button>
+        <Button Grid.Column="4" Grid.Row="0" Background="Transparent" FontStyle="Normal" FontSize="24" Foreground="White">AC</Button>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0B527F"/>
+                <GradientStop Color="#FF26D6C2" Offset="0.944"/>
+                <GradientStop Color="#FF2F93B5" Offset="0.482"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+      
+    </Grid>
+</Window>
